@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>fr.afcepf.ai103</groupId>
+    <artifactId>myApp</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>myAppWeb</artifactId>
+  <packaging>war</packaging>
+   <properties>
+   	<org.apache.myfaces.version>2.2.5</org.apache.myfaces.version> 
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+    	<artifactId>javax.servlet-api</artifactId>
+    	<version>3.1.0</version>
+    	<!-- 	Si scope = compile (par defaut) le .jar est utilisé a la compilation et à l'execution
+    			et sera placé dans la partie WEB-INF/lib du .war à deployer dans TOMCAT		
+    			Si scope = provided le .jar est utilisé à la compilation et est déjà fourni
+    			par le serveur (TomCat ou autre) et/ou la jvm	-->
+    	<scope>provided</scope>
+  	</dependency>
+  	<dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>2.9.6</version>
+    	<!-- si scope=compile par défaut le .jar est utilisé à la compilation et à l'execution
+	         et sera placé dans la partie WEB-INF/lib du .war à déployer dans tomcat -->
+	</dependency>
+	
+	<dependency>
+	     <groupId>fr.afcepf.ai103</groupId>
+  		<artifactId>myAppCore</artifactId>
+ 		 <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+	
+  </dependencies>
+  
+  <build>
+  	<finalName>myAppWeb</finalName> <!--  pour construire p1.war -->
+  </build>
+</project>
