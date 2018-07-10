@@ -38,12 +38,25 @@
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
-</dependency>
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
 	
+	<dependency> 
+		<groupId>org.apache.myfaces.core</groupId> 
+		<artifactId>myfaces-api</artifactId> 
+		<version>${org.apache.myfaces.version}</version> 
+		<scope>compile</scope> 
+	</dependency>
+	 
+	<dependency> 
+		<groupId>org.apache.myfaces.core</groupId> 
+		<artifactId>myfaces-impl</artifactId> 
+		<version>${org.apache.myfaces.version}</version> 
+		<scope>runtime</scope> 
+	</dependency>
   </dependencies>
   
   <build>
