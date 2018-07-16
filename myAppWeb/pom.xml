@@ -44,12 +44,20 @@
 	    <version>1.2</version>
 	</dependency>
 	
+	<dependency>  
+	  <groupId>org.primefaces</groupId>   
+	 <artifactId>primefaces</artifactId>   
+	   <version>4.0</version>
+	   </dependency>
+	
 	<dependency> 
 		<groupId>org.apache.myfaces.core</groupId> 
 		<artifactId>myfaces-api</artifactId> 
 		<version>${org.apache.myfaces.version}</version> 
 		<scope>compile</scope> 
 	</dependency>
+	
+
 	 
 	<dependency> 
 		<groupId>org.apache.myfaces.core</groupId> 
